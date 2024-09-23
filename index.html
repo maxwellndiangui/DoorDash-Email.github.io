@@ -23,38 +23,50 @@
             /* desktop */
             @media only screen and (min-width: 600px) {
                 .container{
-                    width: 480px !important;
+                    width: 500px !important;
                 }
                 .reciept-row{
                     width: 87% !important;
                 }
             }
             /* mobile */
-            @media only screen and (max-width: 480px) {
+            @media only screen and (max-width: 500px) {
                 .container{
                     width: 100% !important;
                 }
                 .logo-row{
                     width: 100% !important;
                 }
+                .order-header {
+                    font-size: 36px !important;
+                }
                 .order-row{
                     width: 100% !important;
                 }
                 .estimate-row{
-                    width: 60% !important;
+                    width: 90% !important;
                 }
                 .tracking-row{
-                    width: 38% !important;
+                    width: 80% !important;
+                }
+                .banner-img {
+                    width: 100% !important;
                 }
                 .banner-row{
                     width: 100% !important;
                 }
                 .reciept-row{
-                    width: 87% !important;
+                    width: 100% !important;
                 }
                 .full-logo-row{
                     width: 100% !important;
-                }          
+                }
+                .line1 {
+                    width: 100% !important;
+                }
+                .line2 {
+                    width: 100% !important;
+                }
                 .footer-row{
                     width: 100% !important;
                 }
@@ -69,11 +81,11 @@
             <tr>
                 <td align="center" valign="top">
                     <!--Start Container-->
-                        <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                        <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                             <!--Start of DoorDash Logo Row-->
                             <tr>
                                 <td>
-                                    <table class="logo-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                                    <table class="logo-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
                                             <td style="padding: 40px 40px 40px 60px">
                                                 <a href="#"><img width="45" style="width: 45px" src="https://i.postimg.cc/qv3T7FBS/doordash-logo-min.png" alt="DoorDash Logo"></a>
@@ -86,9 +98,9 @@
                             <!--Start of Order Row-->
                             <tr>
                                 <td>
-                                    <table class="order-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                                    <table class="order-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
-                                            <td style="padding: 0px 0px 0px 60px;font-size:45px;line-height:60px;font-weight:bold" valign: "top">
+                                            <td class="order-header" style="padding: 0px 0px 0px 60px;font-size:45px;line-height:60px;font-weight:bold" valign: "top">
                                                 Thanks for your<br>order, Reader
                                             </td>
                                         </tr>
@@ -101,7 +113,7 @@
                                 <td>
                                     <table class="estimate-row" width="60%" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
-                                            <td style="padding: 20px 0px 20px 60px;font-size:16px;line-height:20px;" valign: "top">
+                                            <td class="estimate-text" style="padding: 20px 0px 20px 60px;font-size:16px;line-height:20px;" valign: "top">
                                                 The estimated delivery time for your order
                                                 is <strong>12:51 PM - 1:01 PM</strong>. Track your order in
                                                 the DoorDash app or website.
@@ -127,10 +139,10 @@
                             <!--Start of Banner Row-->
                             <tr>
                                 <td>
-                                    <table class="banner-row" width="600px" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                                    <table class="banner-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
                                             <td>
-                                                <a href="#"><img width="600" style="width: 600px;" src="https://i.postimg.cc/KY7hPgM5/doordash-banner-min.png" alt="DoorDash Banner">
+                                                <a href="#"><img class="banner-img" width="600" style="width: 600px;" src="https://i.postimg.cc/KY7hPgM5/doordash-banner-min.png" alt="DoorDash Banner">
                                                 </a>
                                             </td>
                                         </tr>
@@ -141,7 +153,7 @@
                             <!--Start of Reciept Row-->
                             <tr>
                                 <td align="center" valign="top">
-                                    <table class="reciept-row" width="600px" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                                    <table class="reciept-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
                                             <td style="width:6%" width="6%"></td>
                                             <td align="center" valign="top">
@@ -238,7 +250,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="center" bgcolor="#ffffff" valign="top">
-                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:530px" width="530">
+                                                            <table class="line1" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 530px;" width="100%">
                                                                 <tr>
                                                                     <td>
                                                                         <hr width="85%" size="1" color="#d4d4d4">
@@ -318,7 +330,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="center" bgcolor="#ffffff" valign="top">
-                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:530px" width="530">
+                                                            <table class="line2" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 530px;" width="100%">
                                                                 <tr>
                                                                     <td>
                                                                         <hr width="85%" size="1" color="#d4d4d4">
@@ -380,7 +392,7 @@
                             <!--Start of Full Logo Row-->
                             <tr>
                                 <td>
-                                    <table class="full-logo-row" width="600px" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                                    <table class="full-logo-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
                                             <td style="padding: 50px 0 45px 60px;">
                                                 <img width="183" style="width: 183px;" src="https://i.postimg.cc/N0vw2x5M/full-logo-min.png" alt="Full DoorDash Logo">
@@ -393,7 +405,7 @@
                             <!--Start of Footer Row-->
                             <tr>
                                 <td>
-                                    <table class="footer-row" width="400px" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
+                                    <table class="footer-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: #ededed;" role="presentation">
                                         <tr>
                                             <td style="padding:20px 0 20px 60px">
                                                 <p style="font-size:14px;line-height:18px;font-weight:400;margin:0;color:#9a9a9a">
